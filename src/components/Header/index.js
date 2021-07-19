@@ -1,13 +1,15 @@
 import React from 'react';
-import Nav from '../Nav'
+import Nav from '../Nav';
 
-function Header () {
+
+function Header (props) {
+    const { categorySelected, setCategorySelected } = props;
     return (
         <header className="flex-row">
             <h1>hellokedakai</h1>
-            <Nav></Nav>
+            <Nav categorySelected = {categorySelected} setCategorySelected={setCategorySelected}></Nav>
         </header>
-    )
+    );
 }
 
 export default Header;

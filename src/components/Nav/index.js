@@ -14,38 +14,20 @@ const categories = [
     },
 ];
 
-function Nav() {
+function Nav(props) {
+
+    const {categorySelected, setCategorySelected} = props;
 
 
   return (
     <nav>
         <ul className="flex-row">
-            {/* <li className="mx-2">
-                <a href="#about">
-                    About Me
-                </a>
-            </li>
-            <li className="mx-2">
-                <span>
-                    Portfolio
-                </span>
-            </li>
-            <li className="mx-2">
-                <span>
-                    Contact
-                </span>
-            </li>
-            <li className="mx-2">
-                <span>
-                    Resume
-                </span>
-            </li> */}
             {categories.map((category) => (
             <li
-                className="mx-1"
+                className= {categorySelected === category.name}
                 key={category.name}
             >
-                <span onClick={() => categorySelected(category.name)} >
+                <span onClick={() => setCategorySelected(category.name)} >
                 {category.name}
                 </span>
             </li>
@@ -55,8 +37,8 @@ function Nav() {
   );
 }
 
-function categorySelected(name) {
-    console.log(`${name} clicked`)
-}
+// function categorySelected(name) {
+//     console.log(`${name} clicked`)
+// }
 
 export default Nav;
