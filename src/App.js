@@ -6,11 +6,14 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div>
-      <Header className = "bg"></Header>
+      <Header></Header>
       <main>
         
       </main>
-      <Footer></Footer>
+      <div>
+        <Footer></Footer>
+      </div>
+      
     </div>
   );
 }

@@ -3,6 +3,7 @@ main {
 	margin: 0 auto;
 	max-width: 90%;
   padding: 50px 30px;
+  justify-content: space-around;
 }
 :root {
   --primary: #8c54ff;
@@ -20,6 +21,7 @@ main {
 
 * {
   box-sizing: border-box;
+  margin: auto;
 }
 
 html,
@@ -38,6 +40,11 @@ body {
   color: var(--light);
   font-family: 'Poiret One', cursive;
 
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -94,6 +101,7 @@ a:hover {
 header {
   background-image: url(../src/assets/images/pexels-tobias-bjørkli-1938351.jpg);
   /* background: var(--dark); */
+  padding: 20px;
 }
 
 header a {
@@ -231,7 +239,7 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
+/* .card {
   width: 25%;
   text-align: center;
 }
@@ -241,9 +249,9 @@ textarea {
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
-}
+} */
 
-.modalBackdrop {
+/* .modalBackdrop {
 	background: rgba(0, 0, 0, .65);
 	bottom: 0;
 	left: 0;
@@ -252,9 +260,9 @@ textarea {
 	right: 0;
 	top: 0;
 	z-index: 1;
-}
+} */
 
-.modalContainer {
+/* .modalContainer {
 	background: var(--darker);
 	border-radius: 5px;
 	max-width: 100%;
@@ -267,7 +275,7 @@ textarea {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 25px;
-}
+} */
 
 button {
 	background: var(--primary);
