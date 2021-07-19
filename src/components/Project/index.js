@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Project = ({ title }) => {
+const Project = ({ name }) => {
     // const [currentProject, setCurrentProject] = useState();
 
     const [projects] = useState([
@@ -20,7 +20,7 @@ const Project = ({ title }) => {
         }
     ]);
 
-    const currentProjects = projects.filter((project) => project.title === title);
+    const currentProjects = projects.filter((project) => project.name === name);
 
     return (
         <section>
@@ -44,6 +44,6 @@ const Project = ({ title }) => {
             ))}
         </section>
     )
-}
+};
 
 export default Project;
