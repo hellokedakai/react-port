@@ -92,7 +92,8 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background-image: url(../src/assets/images/pexels-tobias-bjørkli-1938351.jpg);
+  /* background: var(--dark); */
 }
 
 header a {
