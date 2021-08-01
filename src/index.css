@@ -99,8 +99,8 @@ a:hover {
 }
 
 header {
-  background-image: url(../src/assets/images/pexels-tobias-bjørkli-1938351.jpg);
-  /* background: var(--dark); */
+  /* background-image: url(../src/assets/images/pexels-tobias-bjørkli-1938351.jpg); */
+  background: var(--secondary);
   padding: 20px;
 }
 

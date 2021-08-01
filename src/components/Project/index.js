@@ -31,7 +31,7 @@ const Project = ({ name }) => {
                 deployed,
                 github
             }) => (
-                <div>
+                <div className="col-2">
                     <img src = {require(`../../assets/images/${id}.png`).default} alt={altText} />
                     <div>
                         <h2>
