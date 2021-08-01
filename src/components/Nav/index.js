@@ -25,6 +25,7 @@ function Nav(props) {
             {categories.map((category) => (
             <li
                 className= {categorySelected === category.name}
+                
                 key={category.name}
             >
                 <span onClick={() => setCategorySelected(category.name)} >

@@ -17,6 +17,13 @@ const Project = ({ name }) => {
             title: "Trail Mix",
             deployed: "https://radiant-wildwood-38672.herokuapp.com/",
             github: "https://github.com/RayTakemura/Hiking-Trail-Group-Project"
+        },
+        {
+            id: 3,
+            altText: "app for talking about all things Chelcie",
+            title: "Chelcie Fans",
+            deployed: "https://secret-hollows-41476.herokuapp.com/",
+            github: "https://github.com/simmonsW/chelcie-fans"
         }
     ]);
 
@@ -31,7 +38,7 @@ const Project = ({ name }) => {
                 deployed,
                 github
             }) => (
-                <div className="col-2">
+                <div className="col-3 flex-row">
                     <img src = {require(`../../assets/images/${id}.png`).default} alt={altText} />
                     <div>
                         <h2>
