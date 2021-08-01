@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { FaRocket, FaGithub } from 'react-icons/fa';
 
 const Project = ({ name }) => {
     // const [currentProject, setCurrentProject] = useState();
@@ -30,7 +31,7 @@ const Project = ({ name }) => {
     const currentProjects = projects.filter((project) => project.name === name);
 
     return (
-        <section>
+        <section className="container row">
             {currentProjects.map(({
                 id,
                 altText,
@@ -38,14 +39,19 @@ const Project = ({ name }) => {
                 deployed,
                 github
             }) => (
-                <div className="col-3 flex-row">
-                    <img src = {require(`../../assets/images/${id}.png`).default} alt={altText} />
-                    <div>
-                        <h2>
+                <div className="col-4 flex-row">
+                    <img src = {require(`../../assets/images/${id}.png`).default} alt={altText}/>
+                    <div className="flex-row">
+                        <h4>
                             {title}
-                        </h2>
-                        <a href={deployed} ></a>
-                        <a href={github}></a>
+                        </h4>
+                        <a href={deployed}>
+                        <FaRocket></FaRocket>
+                        </a>
+                        
+                        <a href={github}>
+                            <FaGithub></FaGithub>
+                        </a>
                     </div>
                 </div>
             ))}

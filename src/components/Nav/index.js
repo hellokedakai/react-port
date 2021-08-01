@@ -11,7 +11,7 @@ const categories = [
     {
       name: "Resume",
       description: "Resume",
-    },
+    }
 ];
 
 function Nav(props) {
@@ -20,15 +20,18 @@ function Nav(props) {
 
 
   return (
-    <nav>
-        <ul className="flex-row">
+    <nav className="navbar">
+        <ul className="container-fluid navbar-text">
             {categories.map((category) => (
             <li
                 className= {categorySelected === category.name}
                 
                 key={category.name}
             >
-                <span onClick={() => setCategorySelected(category.name)} >
+                <span 
+                className="m-1"
+                onClick={() => setCategorySelected(category.name)} 
+                >
                 {category.name}
                 </span>
             </li>

@@ -6,7 +6,7 @@ main {
   justify-content: space-around;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: #ff5454;
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
@@ -163,7 +163,7 @@ nav a:hover {
   text-decoration: none;
 }
 
-nav  li {
+nav li {
   cursor: pointer;
 }
 

@@ -40,9 +40,9 @@ function ContactForm() {
 
     // JSX
     return (
-        <section>
-            <h1 data-testid="h1tag">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
+        <section className="container-fluid">
+            <h1 data-testid="h1tag">Contact Me</h1>
+            <form id="contact-form" className="container-fluid" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
@@ -61,7 +61,7 @@ function ContactForm() {
                     <p className="error-text">{errorMessage}</p>
                 </div>
             )}
-            <button data-testid="button" type="submit">Submit</button>
+            <button data-testid="button" type="submit" className="">Submit</button>
         </section>
     );
 
