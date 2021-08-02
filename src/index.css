@@ -160,7 +160,8 @@ li {
 }
 
 nav a:hover {
-  text-decoration: none;
+  text-decoration:rgb(228, 46, 1);
+  opacity: .8;
 }
 
 nav li {

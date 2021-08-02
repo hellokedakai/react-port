@@ -20,7 +20,7 @@ function Nav(props) {
 
 
   return (
-    <nav className="navbar">
+    <nav className="navbar align-items-center">
         <ul className="container-fluid navbar-text">
             {categories.map((category) => (
             <li

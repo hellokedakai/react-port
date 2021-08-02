@@ -25,6 +25,27 @@ const Project = ({ name }) => {
             title: "Chelcie Fans",
             deployed: "https://secret-hollows-41476.herokuapp.com/",
             github: "https://github.com/simmonsW/chelcie-fans"
+        },
+        {
+            id: 4,
+            altText: "app for taking notes",
+            title: "Notetaker",
+            deployed: "https://blooming-basin-16197.herokuapp.com/",
+            github: "https://github.com/hellokedakai/notetaker"
+        },
+        {
+            id: 5,
+            altText: "app for testing your coding knowledge",
+            title: "Code Quiz",
+            deployed: "https://hellokedakai.github.io/code-quiz/",
+            github: "https://github.com/hellokedakai/code-quiz"
+        },
+        {
+            id: 6,
+            altText: "app for checking weather forecast around the world",
+            title: "Weather Forecast",
+            deployed: "https://hellokedakai.github.io/weather-forecast/",
+            github: "https://github.com/hellokedakai/weather-forecast"
         }
     ]);
 
@@ -39,14 +60,14 @@ const Project = ({ name }) => {
                 deployed,
                 github
             }) => (
-                <div className="col-4 flex-row">
+                <div className="col-4 flex-row container-fluid align-text-center">
                     <img src = {require(`../../assets/images/${id}.png`).default} alt={altText}/>
                     <div className="flex-row">
-                        <h4>
+                        <h4 className="align-text-center">
                             {title}
                         </h4>
-                        <a href={deployed}>
-                        <FaRocket></FaRocket>
+                        <a href={deployed} >
+                        <FaRocket ></FaRocket>
                         </a>
                         
                         <a href={github}>
