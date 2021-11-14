@@ -9,7 +9,7 @@ const Project = ({ name }) => {
             id: 1,
             altText: "app for animal friendships",
             title: "Pawpals",
-            deployed: "https://noemiegrau.github.io/project-1-group-4/",
+            deployed: "https://noemiegrau.github.io/pawpals/",
             github: "https://github.com/Noemiegrau/pawpals"
         },
         {
