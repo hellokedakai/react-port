@@ -62,7 +62,6 @@ function ContactForm() {
                 </div>
             )}
             <button data-testid="button" type="submit" className="">Submit</button>
-            <h2></h2>
         </section>
     );
 

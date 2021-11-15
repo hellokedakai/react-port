@@ -6,7 +6,7 @@ function Resume(){
             <h1>
                 Resume
             </h1>
-            <p>Download my <a href="../../assets/resume/resume.pdf" download>resume!</a></p>
+            <p>Download my <a href="resume.pdf" download>resume!</a></p>
             <h2>
                 Front-end Proficiencies
             </h2>
